@@ -1,0 +1,17 @@
+section.auth
+    .wrap
+        form.auth-form
+            p.auth-text Вход
+            input.auth-input(type="email" required)
+            input.auth-input(type="password" required)
+            .auth-social
+                img(src="assets/images/icon_google.svg")
+                p Войти через Google
+            
+            .auth-checkbox
+                input(type="checkbox" required)#policy-checkbox
+                label(for="policy-checkbox") Я соглашаюсь с 
+                    a(href="#") политикой обработки персональных данных
+            .auth-wrap
+                input(type="submit" value="Войти").auth-button
+                a(href="#").auth-link Зарегистрироваться

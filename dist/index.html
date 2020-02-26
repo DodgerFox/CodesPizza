@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<!--meta(http-equiv='X-UA-Compatible' content='IE=edge')-->
+		<!--meta(name='imagetoolbar' content='no')-->
+		<!--meta(name='msthemecompatible' content='no')-->
+		<!--meta(name='cleartype' content='on')-->
+		<!--meta(name='HandheldFriendly' content='True')-->
+		<!--meta(name='format-detection' content='telephone=no')-->
+		<!--meta(name='format-detection' content='address=no')-->
+		<!--meta(name='apple-mobile-web-app-capable' content='yes')-->
+		<!--meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')-->
+		<!-- Favicon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/android-chrome-192x192.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/android-chrome-512x512.png">
+		<link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#34ee00">
+		<link rel="icon" type="image/png" href="../assets/images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#7424f4">
+		<meta name="theme-color" content="#7424f4">
+		<!--share social-->
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Tasker">
+		<meta property="og:title" content="Менеджер задач">
+		<meta property="og:description" content="Менеджер задач с необычным интерфейсом">
+		<meta property="og:url" content="../assets/images/WheelMe.png">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:image" content="../assets/images/WheelMe.png">
+		<meta property="og:image:width" content="1280">
+		<meta property="og:image:height" content="628">
+		<title>Codes Pizza</title>
+		<!-- Common CSS-->
+		<link href="assets/styles/common.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<main class="main">
+			<header class="header">
+				<div class="user">
+					<div class="user__avatar" style="background-image: url('assets/images/avatar.jpg');"></div>
+					<div class="user__name">Alexey Chernov</div>
+					<ul class="user-list">
+						<li class="user-list__item history">
+							<div class="user-container">
+								<img src="assets/images/icon_history.svg">
+								<p>Использованные</p>
+							</div>
+						</li>
+						<li class="user-list__item logout">
+							<div class="user-container">
+								<img src="assets/images/icon_logout.svg">
+								<p>Выйти</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel">
+					<div class="panel-add">
+						<div class="panel-add__icon">
+							<img src="assets/images/icon_plus.svg">
+						</div>
+						<p>Добавить коды</p>
+					</div>
+				</div>
+			</header>
+			<section class="add">
+				<div class="add-close">
+					<img src="assets/images/icon_close.svg">
+				</div>
+				<div class="wrap">
+					<form class="add-form">
+						<p class="add-text">Каждый код с новой строки</p>
+						<textarea class="add-codes"></textarea>
+						<input class="add-button" type="submit" value="Добавить">
+					</form>
+				</div>
+			</section>
+			<section class="codes">
+				<div class="wrap">
+					<p class="codes-counter">Осталось 100</p>
+					<div class="codes-body">
+						<div class="codes-capsule">
+							<p class="codes-code">748A20fz</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">688C89EC</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">58AA225B</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">4BDC8498</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">3BE24F6B</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">248A20fz</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">1BE24F6B</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">748A20fz</p>
+						</div>
+						<div class="codes-capsule">
+							<p class="codes-code">748A20fz</p>
+						</div>
+					</div>
+					<a class="autograph" href="http://alexey-chernov.ru/" target="_blank">
+						<img src="http://alexey-chernov.ru/assets/images/logo.svg">
+					</a>
+				</div>
+			</section>
+			<section class="messages">
+				<div class="message">Код скопирован</div>
+				<div class="message">Чтобы отменить архивацию кода, нажмите на него еще раз.</div>
+				<div class="message">Добавлено 100 новых промокодов</div>
+			</section>
+		</main>
+		<script src="assets/scripts/common.min.js"></script>
+		<script src="assets/scripts/main.js"></script>
+	</body>
+
+</html>

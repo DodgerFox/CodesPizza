@@ -1,0 +1,108 @@
+.auth
+    height 100vh
+    .wrap
+        height 100%
+        center()
+    
+    &-form
+        display flex
+        flex-direction column
+        align-items center
+    
+    &-input
+        margin-top 10px
+        border none
+        padding 15px 25px
+        background-color #f1f1f1
+        border-radius 50px
+        font-size 16px
+        text-align center
+        width 100%
+        t()
+
+        &.invalid
+            background-color #ffbdbd
+    
+    &-text
+        text-align center
+        padding-bottom 20px
+        font-size 32px
+    
+    &-social
+        display flex
+        align-items center
+        margin 10px 0
+        padding 13px
+        background #f5f5f5
+        border-radius 60px
+        width 203px
+        cursor pointer
+        t()
+        img
+            max-width 26px
+        p
+            margin-left 10px
+            white-space nowrap
+            font-size 13px
+    
+    &-button
+        padding 13px 25px
+        font-size 16px
+        margin-top 15px
+        background #79d8ac
+        border none
+        color white
+        border-radius 60px
+        t()
+    
+    &-link
+        font-size 16px
+        margin-left 15px
+        color #222
+        +to-width(360px)
+            font-size 14px
+    
+    &-checkbox
+            position relative
+            margin 8px 0
+            input
+                position absolute
+                opacity 0                
+
+                + label
+                    cursor pointer
+                    font-size 12px
+                    padding-left 30px
+                    text-align left
+                    line-height 18px
+                    position relative
+                    a
+                        color #00a1ff
+
+                    &:after
+                        content ''
+                        position absolute
+                        height 16px
+                        width 16px
+                        border-radius 5px
+                        background-color #f0f0f0
+                        left 0
+                        top 0px
+                    
+                    &:before
+                        content ''
+                        position absolute
+                        height 10px
+                        width 10px
+                        border-radius 3px
+                        background-color #00a1ff
+                        left 3px
+                        top 3px
+                        opacity 0
+                        z-index 2
+                        t()
+                
+                &:checked
+                    + label
+                        &:before
+                            opacity 1   

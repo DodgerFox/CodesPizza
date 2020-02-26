@@ -1,0 +1,74 @@
+.user
+    display flex
+    align-items center
+    cursor pointer
+    padding 10px 15px
+    border-radius 20px
+    position relative
+    t()
+    &:hover
+        background #f0f0f0
+    
+    &.open
+        background #f0f0f0
+        .user-list
+            opacity 1
+            pointer-events all
+
+    &__avatar
+        min-width 40px
+        width 40px
+        height 40px
+        border-radius 50%
+        background #f1f1f1
+        margin-right 15px
+        pointer-events none
+        background-size cover
+        z-index 3
+        background-position top center
+    
+    &__name
+        font-size 14px
+        color #222
+        pointer-events none
+        z-index 3
+        white-space nowrap
+    
+    &-container
+        display flex
+        align-items center
+        border-bottom 1px solid #e3e3e3
+        padding 12px 0
+    
+    &-list
+        position absolute
+        top 30px
+        left 0
+        right 0
+        padding-top 30px
+        background #f1f1f1
+        border-radius 20px
+        overflow hidden
+        opacity 0
+        pointer-events none
+        z-index -1
+        t()
+
+        &__item
+            padding 0 15px
+            t()
+            &:hover
+                background #5bfbc8
+            &:first-child
+                .user-container
+                    border-top 1px solid #e3e3e3
+            &:last-child
+                .user-container
+                    border none
+            img
+                max-width 20px
+                margin-right 10px
+            
+            p
+                font-size 14px
+                color #222

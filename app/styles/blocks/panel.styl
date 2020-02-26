@@ -1,0 +1,32 @@
+.panel
+    display flex
+    align-items center
+    margin 10px
+
+    &-add
+        display flex
+        align-items center
+        cursor pointer
+        &:hover
+            p
+                color black
+
+        &__icon
+            width 40px
+            height 40px
+            border-radius 50%
+            background-color #5bfbc8
+            pointer-events none
+            center()
+            img
+                max-width 60%
+        
+        p
+            font-size 14px
+            font-weight 300
+            color #bcbcbc
+            margin-left 10px
+            pointer-events none
+            t()
+            +to-width(520px)
+                display none

@@ -1,0 +1,49 @@
+.codes
+  padding 40px 0
+  padding-top 140px
+  pointer-events none
+  +to-width(768px)
+    padding-top 50px
+  .wrap
+    display flex
+    align-items center
+    flex-direction column
+    height 100vh
+
+  &-body
+    width 100%
+    background white
+    padding 30px 0
+    padding-top 30px
+    border-radius 40px
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+  &-counter
+    font-size 30px
+    color #d0d0d0
+    margin-bottom 40px
+
+  &-capsule
+    padding 24px 70px
+    border-radius 100px
+    cursor pointer
+    margin-bottom 10px
+    pointer-events all
+    t()
+    &:hover
+      background #d5ffe8
+    
+    &.used
+      background #ffd6d6
+    
+    +to-width(768px)
+      padding 24px 50px
+
+  &-code
+    font-size 34px
+    font-weight 500
+    letter-spacing 1px
+    pointer-events none

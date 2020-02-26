@@ -1,0 +1,42 @@
+.messages
+    position fixed
+    bottom 0
+    padding 20px
+    pointer-events none
+    display flex
+    flex-direction column
+    max-width 240px
+    center()
+
+    .message
+        padding 20px 30px
+        background-color #5bc2c2d1
+        color white
+        font-size 16px
+        font-weight 500
+        line-height 20px
+        border-radius 20px
+        opacity 0
+        transform translateY(10px)
+        animation showMessage 3s linear
+        margin-top 5px
+        t()
+
+@keyframes showMessage{
+    0%{
+        opacity 0
+        transform translateY(10px)
+    }
+    10%{
+        opacity 1
+        transform translateY(0px)
+    }
+    90%{
+        opacity 1
+        transform translateY(0px)
+    }
+    100%{
+        opacity 0
+        transform translateY(-10px)
+    }
+}
